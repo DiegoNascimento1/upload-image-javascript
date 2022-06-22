@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Imagem Javascript</title>
 </head>
+
 <body>
-    
+    <div class="image">
+        <div class="editar-content">
+            <span>
+                <i>editar</i>
+            </span>
+        </div>
+        <div id="new">
+            <div class="close-preview-js close-preview">x</div>
+        </div>
+        <img src="https://jamesrmoro.me/wp-content/uploads/2021/02/profile.png" alt="Sem imagem">
+    </div>
+    <br>
+    <input id="file-preview-js" type="file" accept="image/*" onchange="loaderFile(event)"><br><br>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple><br><br>
+    <div class="imagens">
+        
+    </div>
+
+    <script src="assets/main.js"></script>
 </body>
+
 </html>
